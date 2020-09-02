@@ -1,0 +1,61 @@
+{
+  "social": [
+    {
+      "url": "https://github.com/azimcan",
+      "name": "Github",
+      "image": "github/github-original.svg"
+    },
+    {
+      "url": "https://twitter.com/azmcnkrc",
+      "name": "Twitter",
+      "image": "twitter/twitter-original.svg"
+    },
+    {
+      "url": "https://www.linkedin.com/in/azimcan",
+      "name": "Linkedin",
+      "image": "linkedin/linkedin-original.svg"
+    }
+  ],
+  "kit": [
+    {
+      "name": "Ruby",
+      "image": "ruby/ruby-original.svg"
+    },
+    {
+      "name": "Ruby on Rails",
+			"image": "rails/rails-plain-wordmark.svg"
+    }, 
+    {
+      "name": "Python",
+			"image": "python/python-original.svg"
+    },
+    {
+      "name": "JavaScript",
+			"image": "javascript/javascript-original.svg"
+    },
+    {
+      "name": "Postgresql",
+			"image": "postgresql/postgresql-original.svg"
+    },
+    {
+      "name": "Bootstrap",
+			"image": "bootstrap/bootstrap-plain.svg"
+    },
+    {
+      "name": "git",
+			"image": "git/git-original.svg"
+    },
+    {
+      "name": "Heroku",
+			"image": "heroku/heroku-original.svg"
+    },
+    {
+      "name": "Linux",
+			"image": "linux/linux-original.svg"
+    },
+    {
+      "name": "Ubuntu",
+      "image": "ubuntu/ubuntu-plain.svg"
+    }
+  ]
+}

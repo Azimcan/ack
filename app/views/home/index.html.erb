@@ -6,21 +6,20 @@
 
 			<ul class="list-group list-group-flush rounded-lg">
 				<li class="list-group-item active bg-dark"> Social Media</li>
-				<a class="list-group-item list-group-item-action" href="https://github.com/azimcan"><%= image_tag("kit/github-original.svg", size: "20x20") %> Github</a>
-				<a class="list-group-item list-group-item-action" href="https://twitter.com/azmcnkrc"><%= image_tag("kit/twitter-original.svg", size: "20x20") %> Twitter</a>
-				<a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/azimcankuruca"><%= image_tag("kit/linkedin-original.svg", size: "20x20") %> Linkedin</a>
-
+				<% @social.each do |item| %>
+					<a class="list-group-item list-group-item-action" href="<%= item["url"] %>">
+						<%= image_tag("icons/#{item["image"]}", size: "20x20") %> <%= item["name"] %>
+					</a>
+				<% end %>
+				
 				<li class="list-group-item active bg-dark"> Kit</li>
-				<li class="list-group-item"><%= image_tag("kit/ruby-original.svg", size: "20x20") %> Ruby</li>
-				<li class="list-group-item"><%= image_tag("kit/rails-plain-wordmark.svg", size: "20x20") %>Ruby on Rails</li>
-				<li class="list-group-item"><%= image_tag("kit/python-original.svg", size: "20x20") %> Python</li>
-				<li class="list-group-item"><%= image_tag("kit/javascript-original.svg", size: "20x20") %> JavaScript</li>
-				<li class="list-group-item"><%= image_tag("kit/postgresql-original.svg", size: "20x20") %> Postgresql</li>
-				<li class="list-group-item"><%= image_tag("kit/bootstrap-plain.svg", size: "20x20") %> Bootstrap</li>
-				<li class="list-group-item"><%= image_tag("kit/git-original.svg", size: "20x20") %> git</li>
-				<li class="list-group-item"><%= image_tag("kit/heroku-original.svg", size: "20x20") %> Heroku</li>
-				<li class="list-group-item"><%= image_tag("kit/linux-original.svg", size: "20x20") %> Linux | <%= image_tag("kit/ubuntu-plain.svg", size: "20x20") %> Ubuntu</li>
+				<% @kit.each do |item| %>
+					<li class="list-group-item">
+						<%= image_tag("icons/#{item["image"]}", size: "20x20") %> <%= item["name"] %>
+					</li>
+				<% end %>
 			</ul>
+
 		</div>		
 	</div>
 </div>
