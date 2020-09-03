@@ -54,6 +54,10 @@
       "image": "heroku/heroku-original.svg"
     },
     {
+      "name": "Docker",
+			"image": "docker/docker-original.svg"
+    },
+    {
       "name": "Linux",
       "image": "linux/linux-original.svg"
     },
