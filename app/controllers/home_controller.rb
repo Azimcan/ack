@@ -4,9 +4,8 @@ class HomeController < ApplicationController
     file = File.read(Rails.root.join("db/ack-data.json"))
     data = JSON.parse(file)
 
-    puts data
+    @info = data["info"]
     @social = data["social"]
-    puts @social
     @kit = data["kit"]
   end
 end
